@@ -1,0 +1,200 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1286.4,760.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aj="clr-namespace:Atlassian.Jira;assembly=Atlassian.Jira" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ubme="clr-namespace:UiPath.BAF.Models.Entity;assembly=UiPath.Jira" xmlns:ubt="clr-namespace:UiPath.BAF.Telemetry;assembly=UiPath.Jira" xmlns:uja="clr-namespace:UiPath.Jira.Activities;assembly=UiPath.Jira.Activities" xmlns:ujaa="clr-namespace:UiPath.Jira.Activities.Activities;assembly=UiPath.Jira.Activities" xmlns:usa="clr-namespace:UiPath.Shared.Activities;assembly=UiPath.Jira.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.BAF.Telemetry</x:String>
+      <x:String>UiPath.Jira.Activities.Enums.JiraApplicationScope</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>Atlassian.Jira</x:String>
+      <x:String>UiPath.Jira.Activities</x:String>
+      <x:String>UiPath.Jira.Activities.Activities</x:String>
+      <x:String>UiPath.Jira.Models</x:String>
+      <x:String>UiPath.BAF.Models.Entity</x:String>
+      <x:String>UiPath.BAF.Models.Response</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Jira.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Jira</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>Atlassian.Jira</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="553.6,696" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uja:JiraScope ApiToken="{x:Null}" ClientID="{x:Null}" ClientSecret="{x:Null}" Connection="{x:Null}" ContinueOnError="{x:Null}" JiraConnection="{x:Null}" ServerURL="{x:Null}" UserName="{x:Null}" AuthenticationType="Api Token" DisplayName="Jira Scope" sap:VirtualizedContainerService.HintSize="510.4,606.4" sap2010:WorkflowViewState.IdRef="JiraScope_1">
+      <uja:JiraScope.Body>
+        <ActivityAction x:TypeArguments="usa:IObjectContainer">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="usa:IObjectContainer" Name="ScopeActivity" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476.8,520" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="aj:Issue" Name="varissue" />
+              <Variable x:TypeArguments="aj:IssueStatus" Name="varissuestatus" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ujaa:JiraExecuteMethod ContinueOnError="{x:Null}" Status="{x:Null}" DisplayName="Execute Method" sap:VirtualizedContainerService.HintSize="433.6,61.6" sap2010:WorkflowViewState.IdRef="JiraExecuteMethod_1">
+              <ujaa:JiraExecuteMethod.BusinessEntity>
+                <ubme:BusinessEntity AuthFields="{x:Null}" Connection="{x:Null}" Id="{x:Null}" Metadata="{x:Reference __ReferenceID0}" Name="GetProjects">
+                  <ubme:BusinessEntity.AllFields>
+                    <scg:List x:TypeArguments="ubme:EntityField" Capacity="4">
+                      <ubme:EntityField x:TypeArguments="scg:IEnumerable(aj:Project)" ArgumentValue="{x:Null}" DefaultValue="{x:Null}" FieldFullName="{x:Null}" InArgumentValue="{x:Null}" InOutArgumentValue="{x:Null}" Metadata="{x:Null}" OriginalArgumentType="{x:Null}" OutArgumentValue="{x:Null}" SampleValue="{x:Null}" Value="{x:Null}" x:Name="__ReferenceID1" ArgumentDirection="Out" ArgumentType="scg:IEnumerable(aj:Project)" DataType="IEnumerable" Description="IProjectService.IEnumerable`1" FieldName="Response" FormDataType="ExpressionTextBox" sap2010:WorkflowViewState.IdRef="EntityField`1_3" IsCustomField="False" IsDefault="False" IsDeletable="True" IsIdField="False" IsSelected="False" Mandatory="False" ShouldFilterOnChange="False" />
+                    </scg:List>
+                  </ubme:BusinessEntity.AllFields>
+                  <ubme:BusinessEntity.EntityMetadata>
+                    <ubme:EntityMetadata PrimaryFields="{x:Null}" Description="IProjectService" EligibleOperations="-1" IsCustomEntity="False" Name="GetProjects">
+                      <ubme:EntityMetadata.Metadata>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object" x:Name="__ReferenceID0">
+                          <x:String x:Key="Service">IProjectService</x:String>
+                          <x:String x:Key="MethodName">GetProjectsAsync</x:String>
+                          <x:String x:Key="PropertyName">Projects</x:String>
+                        </scg:Dictionary>
+                      </ubme:EntityMetadata.Metadata>
+                    </ubme:EntityMetadata>
+                  </ubme:BusinessEntity.EntityMetadata>
+                  <ubme:BusinessEntity.SelectedFields>
+                    <scg:List x:TypeArguments="ubme:EntityField" Capacity="1">
+                      <x:Reference>__ReferenceID1</x:Reference>
+                    </scg:List>
+                  </ubme:BusinessEntity.SelectedFields>
+                  <ubme:BusinessEntity.TelemetryProperties>
+                    <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+                  </ubme:BusinessEntity.TelemetryProperties>
+                </ubme:BusinessEntity>
+              </ujaa:JiraExecuteMethod.BusinessEntity>
+              <ujaa:JiraExecuteMethod.SelectedFields>
+                <scg:List x:TypeArguments="ubme:EntityField" Capacity="1">
+                  <x:Reference>__ReferenceID1</x:Reference>
+                </scg:List>
+              </ujaa:JiraExecuteMethod.SelectedFields>
+              <ujaa:JiraExecuteMethod.TelemetryProperties>
+                <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+              </ujaa:JiraExecuteMethod.TelemetryProperties>
+            </ujaa:JiraExecuteMethod>
+            <uja:GetIssue ContinueOnError="{x:Null}" NumberOfAttachments="{x:Null}" NumberOfComments="{x:Null}" DisplayCounts="False" DisplayName="Get Issue" sap:VirtualizedContainerService.HintSize="433.6,85.6" sap2010:WorkflowViewState.IdRef="GetIssue_1" Issue="[varissue]" IssueKey="test">
+              <uja:GetIssue.TelemetryProperties>
+                <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+              </uja:GetIssue.TelemetryProperties>
+            </uja:GetIssue>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="aj:IssueStatus">[varissuestatus]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="aj:IssueStatus">[varissue.Status]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="aj:IssueStatus">[varissuestatus]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="aj:IssueStatus">["new"]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uja:JiraScope.Body>
+      <uja:JiraScope.TelemetryProperties>
+        <scg:Dictionary x:TypeArguments="ubt:TelemetryGroup, scg:IDictionary(x:String, x:String)" />
+      </uja:JiraScope.TelemetryProperties>
+    </uja:JiraScope>
+  </Sequence>
+</Activity>
